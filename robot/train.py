@@ -3,7 +3,7 @@ from torch.utils.data import Dataset, DataLoader
 from transformers import GPT2LMHeadModel, GPT2Tokenizer, Trainer, TrainingArguments
 
 class DialogueDataset(Dataset):
-    def __init__(self, file_path, tokenizer, block_size=128):
+    def __init__(se -blf, file_path, tokenizer, block_size=128):
         with open(file_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
         self.examples = []
